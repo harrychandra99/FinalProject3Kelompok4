@@ -190,13 +190,13 @@
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonClear"
+                android:id="@+id/btnDecimal"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_custom_dark_purple"
-                android:text="@string/clear"
+                android:text="@string/Decimal"
                 android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -210,14 +210,14 @@
                 android:text="@string/_0" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonDecimal"
+                android:id="@+id/btnPercent"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:background="@drawable/btn_custom_dark_purple"
-                android:text="@string/Decimal" />
+                android:text="@string/Percent" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonPlus"

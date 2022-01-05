@@ -41,15 +41,12 @@ public class MainActivity extends AppCompatActivity {
         binding.button8.setOnClickListener(v -> updateText("8"));
         binding.button9.setOnClickListener(v -> updateText("9"));
         binding.button0.setOnClickListener(v -> updateText("0"));
-        binding.buttonClear.setOnClickListener(v -> display.setText(""));
+        binding.btnDecimal.setOnClickListener(v -> display.setText("."));
         binding.buttonPlus.setOnClickListener(v -> updateText("+"));
         binding.buttonMin.setOnClickListener(v -> updateText("-"));
         binding.buttonMultiplication.setOnClickListener(v -> updateText("X"));
-
         binding.buttonDiv.setOnClickListener(v -> updateText("÷"));
-
-        binding.buttonDecimal.setOnClickListener(v -> updateText("."));
-
+        binding.btnPercent.setOnClickListener(v -> updateText("%"));
         binding.btnAnswer.setOnClickListener(v -> {
             String userExp = display.getText().toString();
 
