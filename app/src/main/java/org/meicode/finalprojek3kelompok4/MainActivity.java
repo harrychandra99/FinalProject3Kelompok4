@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         binding.button8.setOnClickListener(v -> updateText("8"));
         binding.button9.setOnClickListener(v -> updateText("9"));
         binding.button0.setOnClickListener(v -> updateText("0"));
-        binding.btnDecimal.setOnClickListener(v -> display.setText("."));
+        binding.btnDecimal.setOnClickListener(v -> updateText("."));
         binding.buttonPlus.setOnClickListener(v -> updateText("+"));
         binding.buttonMin.setOnClickListener(v -> updateText("-"));
         binding.buttonMultiplication.setOnClickListener(v -> updateText("X"));
@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             display.setText(result);
             display.setSelection(result.length());
         });
-
     }
 
     private void updateText(String strToAdd) {
@@ -73,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             display.setText(String.format("%s%s%s", leftStr, strToAdd, rightStr));
         }
         display.setSelection(cursorPos + 1);
-
     }
 
     public void deleteBtn(View view) {
